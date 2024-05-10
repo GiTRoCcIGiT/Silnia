@@ -1,0 +1,15 @@
+<div class="body">
+  <div class="H"></div>
+  <div class="S">
+    <div class="L"></div>
+    <input type="number" [(ngModel)]="liczba" (input)="obliczSilnie()">
+    <div *ngIf="liczby.length > 0">
+      <h3>Wyniki:</h3>
+      <ul>
+        <li *ngFor="let wynik of wyniki">{{ wynik }}</li>
+      </ul>
+      <h3>Silnia z {{ liczba }}: {{ silnia }}</h3>
+    </div>
+  </div>
+  <div class="D"></div>
+</div>
